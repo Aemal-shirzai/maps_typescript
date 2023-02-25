@@ -1,0 +1,22 @@
+{
+  "name": "maps_typescript",
+  "version": "1.0.0",
+  "description": "Displaying distinct markers on the map to indicate both the source and destination selected by the user",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aemal-shirzai/maps_typescript.git"
+  },
+  "author": "Aemal Shirzai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aemal-shirzai/maps_typescript/issues"
+  },
+  "homepage": "https://github.com/Aemal-shirzai/maps_typescript#readme",
+  "dependencies": {
+    "parcel": "^2.8.3"
+  }
+}
