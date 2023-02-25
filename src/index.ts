@@ -1,1 +1,5 @@
-console.log(">>>>>>>>>>>> Hello maan how are you")
+import { User } from "./User";
+
+
+var aemal = new User()
+console.log(aemal);
