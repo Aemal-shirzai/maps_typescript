@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Aemal-shirzai/maps_typescript#readme",
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
+    "@types/google.maps": "^3.52.0",
     "parcel": "^2.8.3"
   }
 }
