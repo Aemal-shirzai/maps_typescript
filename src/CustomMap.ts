@@ -1,11 +1,4 @@
-interface Mappable {
-    name: string,
-    location: {
-        lat: number,
-        lng: number
-    }
-    contentInfo(): string
-}
+import { Mappable } from "./interfaces";
 
 export class CustomMap {
     private googleMap: google.maps.Map
