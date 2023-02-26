@@ -14,10 +14,13 @@ export class CustomMap {
     }
 
     addMarker(mappable: Mappable): void {
+        const iconBase = "http://maps.google.com/mapfiles/kml/paddle/";
+        
         const marker = new google.maps.Marker({
             map: this.googleMap,
             position: mappable.location,
-            title: mappable.name
+            title: mappable.name,
+            icon: iconBase + mappable.icon
         });
 
         marker.addListener("click", () => {

@@ -3,6 +3,7 @@ import { Mappable } from "./interfaces";
 
 export class Company implements Mappable {
     name: string;
+    icon: string = 'D.png';
     catchPrase: string;
     location: {
         lat: number,

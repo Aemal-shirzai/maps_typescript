@@ -3,6 +3,7 @@ import { Mappable } from "./interfaces";
 
 export class User implements Mappable {
     name: string;
+    icon: string = 'S.png';
     location: {
         lat: number,
         lng: number
