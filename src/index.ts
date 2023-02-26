@@ -3,10 +3,8 @@ import { Company } from "./Company";
 import { CustomMap } from "./CustomMap";
 
 
-var aemal = new User();
-console.log(">>>>>User: ", aemal);
+var user = new User();
+var company = new Company();
+var map = new CustomMap('map-canvas')
 
-var netlinks = new Company();
-console.log(">>>>>>> Company: ", netlinks)
-
-new CustomMap('map-canvas')
+map.addUserMarker(user)
