@@ -15,5 +15,13 @@ export class User {
         }
     }
 
+    contentInfo(): string {
+        return `
+            <h5 style="display: inline-block">User</h5>: ${this.name} <br/>
+            <strong>Lat: </strong> ${this.location.lat} <br/>
+            <strong>Lng: </strong> ${this.location.lng}
+        `
+    }
+
 }
 

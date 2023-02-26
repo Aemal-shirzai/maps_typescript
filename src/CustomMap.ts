@@ -1,8 +1,10 @@
 interface Mappable {
+    name: string,
     location: {
         lat: number,
         lng: number
     }
+    contentInfo(): string
 }
 
 export class CustomMap {
@@ -19,9 +21,21 @@ export class CustomMap {
     }
 
     addMarker(mappable: Mappable): void {
-        new google.maps.Marker({
+        const marker = new google.maps.Marker({
             map: this.googleMap,
-            position: mappable.location
+            position: mappable.location,
+            title: mappable.name
+        });
+
+        marker.addListener("click", () => {
+            const infoWindow = new google.maps.InfoWindow({
+                content: mappable.contentInfo()
+            });
+
+            infoWindow.open({
+                map: this.googleMap,
+                anchor: marker
+            });
         });
 
     }

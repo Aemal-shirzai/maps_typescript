@@ -17,4 +17,12 @@ export class Company {
         }
     }
 
+    contentInfo(): string {
+        return `
+            <h5 style="display: inline-block">Company</h5>: ${this.name} <br/>
+            <strong>Lat: </strong> ${this.location.lat} <br/>
+            <strong>Lng: </strong> ${this.location.lng}
+        `
+    }
+
 }
