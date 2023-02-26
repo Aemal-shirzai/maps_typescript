@@ -1,5 +1,5 @@
 export class CustomMap {
-    googleMap: google.maps.Map
+    private googleMap: google.maps.Map
 
     constructor(elementId: string) {
         this.googleMap = new google.maps.Map(document.getElementById(elementId), {
