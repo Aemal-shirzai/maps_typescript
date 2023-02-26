@@ -8,3 +8,4 @@ var company = new Company();
 var map = new CustomMap('map-canvas')
 
 map.addUserMarker(user)
+map.addCompanyMarker(company)
