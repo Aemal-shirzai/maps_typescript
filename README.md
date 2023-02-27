@@ -8,6 +8,10 @@ The purpose of this app is to apply the typescript concepts.
 2. Any code editor.
 
 
+## Project Structure
+1. **index.html:** Entry point of the application. All the components are redered here.
+2. **src:** Contains all components of the application.
+
 
 ## How To Run Project
 1. Clone the project or download az .zip.
